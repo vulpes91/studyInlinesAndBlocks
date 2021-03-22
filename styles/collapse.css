@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.greyblock {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(107, 107, 107);
+    color: crimson;
+}
+
+.greyblock:before {
+    content: "";
+    display: table;
+}
+
+/* данный ^ псевдоэлемент добавляется чтобы "схлопнуть" отступ жёлтого блока (чтобы он не двигал за собой серый) */
+.yellowblock {
+    margin-top: 150px;
+    background-color: rgb(212, 194, 27);
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
