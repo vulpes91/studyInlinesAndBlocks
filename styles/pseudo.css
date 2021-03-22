@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+}
+
+.heading1 {
+    text-decoration: underline;
+    color: rgb(20, 4, 4);
+}
+
+/* псевдоэлементы для создания контента перед и после элемента */
+.heading1:before {
+    content: "Before";
+    /*может быть пустым, но обязательно*/
+    color: brown;
+}
+
+.heading1:after {
+    content: "After";
+    color: crimson;
+}
+
+.monkey:before {
+    content: "🐵";
+}
+
+.monkey:after {
+    content: "🐵";
+}
+
+.monkey2:before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/monkey.png);
+}
+
+.monkey2:after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/monkey.png);
+}
